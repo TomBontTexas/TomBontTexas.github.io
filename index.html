@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TomBontTexas — Web Apps</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="updateBanner" class="update-banner" hidden>
+  <span id="updateBannerText"></span>
+  <button onclick="location.reload()">Refresh Now</button>
+</div>
+<header class="topbar">
+  <h1>🎮 TomBontTexas — Web Apps</h1>
+  <p class="tagline">Browser-based gaming aids and games. No installs, no accounts — everything runs on your device.</p>
+</header>
+<main class="grid">
+  <a class="card" href="GASCAR/">
+    <span class="card-tag">GASCAR</span>
+    <h2>GASCAR Race Control</h2>
+    <p>Offline companion app for the tabletop racing game <em>Warp Space: GASCAR</em> — build ships and crews, design racecourses, and run races.</p>
+  </a>
+  <a class="card" href="wsvb/">
+    <span class="card-tag">WSVB</span>
+    <h2>Warp Space Vehicle Builder</h2>
+    <p>Design and manage starships and vehicles for the <em>Warp Space</em> tabletop RPG.</p>
+  </a>
+  <a class="card" href="WSHB/">
+    <span class="card-tag">WSHB</span>
+    <h2>Warp Space Hero Builder</h2>
+    <p>Build heroes and characters for the <em>Warp Space</em> tabletop RPG.</p>
+  </a>
+  <a class="card" href="rlcb/">
+    <span class="card-tag">RLCB</span>
+    <h2>Rivers of London Investigator Sheet</h2>
+    <p>Interactive character sheet for the <em>Rivers of London</em> RPG.</p>
+  </a>
+  <a class="card" href="RetroAdventureHP28S/">
+    <span class="card-tag">HP-28S</span>
+    <h2>HP-28S 3D Adventure</h2>
+    <p>A browser remake of Paul Dale's 1990 HP-28S dungeon game.</p>
+  </a>
+</main>
+<footer>
+  All of these apps run entirely in your browser — nothing is uploaded anywhere. <span id="footerVersion"></span>
+</footer>
+<script src="version.js"></script>
+<script src="update-banner.js"></script>
+<script>document.getElementById("footerVersion").textContent = "v" + window.APP_VERSION;</script>
+</body>
+</html>
