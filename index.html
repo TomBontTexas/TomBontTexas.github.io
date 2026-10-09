@@ -7,14 +7,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="updateBanner" class="update-banner" hidden>
-  <span id="updateBannerText"></span>
-  <button onclick="location.reload()">Refresh Now</button>
-</div>
 <header class="topbar">
   <h1>🎮 TomBontTexas — Web Apps</h1>
   <p class="tagline">Browser-based gaming aids and games. No installs, no accounts — everything runs on your device.</p>
 </header>
+<p class="notice">None of these are ever really "finished" — they're hobby projects I work on whenever time permits, or whenever a new idea strikes. Use them as much as you like, just know that if you don't save your own work, it may well be gone the next time something changes.</p>
 <main class="grid">
   <a class="card" href="GASCAR/">
     <span class="card-tag">GASCAR</span>
@@ -43,10 +40,7 @@
   </a>
 </main>
 <footer>
-  All of these apps run entirely in your browser — nothing is uploaded anywhere. <span id="footerVersion"></span>
+  All of these apps run entirely in your browser — nothing is uploaded anywhere.
 </footer>
-<script src="version.js"></script>
-<script src="update-banner.js"></script>
-<script>document.getElementById("footerVersion").textContent = "v" + window.APP_VERSION;</script>
 </body>
 </html>

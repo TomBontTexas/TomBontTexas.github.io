@@ -32,6 +32,19 @@ body {
   color: var(--muted);
 }
 
+.notice {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -86,8 +99,4 @@ footer {
   color: var(--muted);
   font-size: 0.8rem;
   padding: 1.5rem;
-}
-
-@media print {
-  .update-banner { display: none !important; }
 }
